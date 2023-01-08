@@ -31,4 +31,3 @@ for round in rounds:
             point += 3
 
 print(point)
-fag
