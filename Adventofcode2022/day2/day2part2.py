@@ -3,31 +3,36 @@ rounds = f.readlines()
 
 point = 0
 for round in rounds:
-    if round.split()[1] == 'X':         #rock
-        point += 1
+
+# X = loose
+# Y = draw
+# Z = win
+
+    if round.split()[1] == 'X':         #loose
+        point += 0
         if round.split()[0] == 'A':     #rock
             point += 3
         elif round.split()[0] == 'B':   #paper
-            point +=0
+            point +=1
         else:                           #scissor
-            point += 6
+            point += 2
     
-    if round.split()[1] == 'Y':         #paper
-        point += 2
-        if round.split()[0] == 'A':     #rock
-            point += 6
-        elif round.split()[0] == 'B':   #paper
-            point +=3
-        else:    #scissor
-            point += 0
-            
-    if round.split()[1] == 'Z':         #scissor
+    if round.split()[1] == 'Y':         #draw
         point += 3
         if round.split()[0] == 'A':     #rock
-            point += 0
+            point += 1
         elif round.split()[0] == 'B':   #paper
-            point +=6
+            point +=2
         else:                           #scissor
             point += 3
+            
+    if round.split()[1] == 'Z':         #win
+        point += 6
+        if round.split()[0] == 'A':     #rock
+            point += 2
+        elif round.split()[0] == 'B':   #paper
+            point +=3
+        else:                           #scissor
+            point += 1
 
 print(point)
