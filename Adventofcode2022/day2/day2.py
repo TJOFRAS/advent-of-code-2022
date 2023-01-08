@@ -1,4 +1,4 @@
-f = open("inputday2.txt", "r")
+f = open("C:/Users/Theo/Documents/Adventofcode2022/advent-of-code-2022/Adventofcode2022/day2/inputday2.txt", "r")
 rounds = f.readlines()
 
 point = 0
@@ -20,7 +20,7 @@ for round in rounds:
             point +=3
         else:    #scissor
             point += 0
-            
+
     if round.split()[1] == 'Z':         #scissor
         point += 3
         if round.split()[0] == 'A':     #rock
