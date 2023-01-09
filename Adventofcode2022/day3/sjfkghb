@@ -1,0 +1,15 @@
+s= [1, 2, 3, 4, 5, 6]
+print(s)
+m = []
+while s != []:
+    m.append(s[:3])
+    s = s[3:]
+print(m)
+
+
+# for a in s:
+#     f = [0] * 3
+#     f[2] = a
+#     f.sort()
+#     if f[2] == int:
+#         print(f)
