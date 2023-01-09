@@ -5,7 +5,6 @@ for comp in packs:
     length = len(comp)
     splitted = comp[0:length//2]
     splitted2 = comp[length//2:]
-    res = str("")
     for i in splitted:
         if i in splitted2 :
             a = ord(i)
