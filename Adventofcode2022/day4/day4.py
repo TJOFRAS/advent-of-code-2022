@@ -28,3 +28,6 @@ def main():
 path = "C:/Users/Theo/Documents/Adventofcode2022/advent-of-code-2022/Adventofcode2022/day4/inputday4.txt"
 main()
 
+groda groda
+
+
