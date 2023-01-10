@@ -1,3 +1,13 @@
-d = ['1']*6
-int(d)
-print(d)
+
+elfpair = [[10, 91], [91, 94]]
+string1 = []
+string2 = []
+for number in range(elfpair[0][0], elfpair[0][1]+1):
+    string1.append(number)
+for number in range(elfpair[1][0], elfpair[1][1]+1):
+    string2.append(number)
+
+for number in string1:
+    print(number)
+    if number in string2:
+        print('true')
